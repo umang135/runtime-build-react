@@ -54,6 +54,9 @@
     ]
   },
   "dependencies": {
-    "react-dev-utils": "file:packages/react-dev-utils"
+    "bfj": "^7.0.2",
+    "path": "^0.12.7",
+    "react-dev-utils": "file:packages/react-dev-utils",
+    "webpack": "^5.65.0"
   }
 }
