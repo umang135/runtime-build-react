@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "react-scripts buildd",
+    "build": "cd packages/react-scripts && node bin/react-scripts.js build",
     "changelog": "lerna-changelog",
     "create-react-app": "node tasks/cra.js",
     "e2e": "tasks/e2e-simple.sh",
@@ -52,8 +52,5 @@
     "*.{js,json,yml,yaml,css,scss,ts,tsx,md}": [
       "prettier --write"
     ]
-  },
-  "dependencies": {
-    "react-scripts": "file:packages/react-scripts"
   }
 }
