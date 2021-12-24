@@ -1,0 +1,713 @@
+body{
+    font-family: var(--font-family)!important;
+    font-weight: var(--font-bold);
+}
+p{
+    margin-bottom: 0px;
+}
+ul{
+    margin-bottom:0px ;
+}
+.header{
+    background: linear-gradient(91deg, var(--light-purple) 0%,var(--purple) 100%) 0% 0% no-repeat;
+    height: 50px;
+}
+#header, #footer{
+    position:fixed;
+    display:block;
+    width: 100%;
+    background:var(--white);
+    z-index:9;
+    text-align:center;
+}
+#header{
+    top:0px;
+    height: 150px;
+    padding: 100px 0px 0px;
+}
+#footer{
+    bottom:0px;
+    height: 150px;
+    padding:0px 0px 30px;
+}
+.header .header-mail{
+    padding-right:30px;
+}
+.header .header-mail img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+.header .header-phone img{
+    max-width: 23px;
+    margin-right: 10px;
+}
+.header-mail span , .header-phone span{
+    color: var(--white);
+    font-family: var(--font-family);
+    font-weight: var(--font-bold);
+    font-size: var(--f-size-18);
+}
+.main{
+    background: url('../images/background-image.png') no-repeat center center;
+    background-size: 100% 100%;
+    height: calc(100vh - 120px);
+    padding: 30px 0px;
+}
+.main .project-name{
+    max-width: 575px;
+    background: url('../images/rounded.png') no-repeat center center;
+    background-size: 100% 100%;
+    height: 575px;
+    position: relative;
+}
+.main .project-name .position-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    max-width: 272px;
+}
+.main .appmixo img{
+    max-width: 488px;
+}
+.main .project-title span{
+    color: var(--black);
+    font-size: 28px;
+}
+.main .project-desc {
+    color:var(--dark-gray);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.main .project-btn a{
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 8px 20px;
+    border-radius: 35px;
+    border: 2px solid var(--blue);
+    transition: 0.5s all ease;
+}
+.main .project-btn a:hover{
+    border: 2px solid var(--blue);
+    background-color: var(--white);
+    color: var(--blue);
+}
+.main .rocket-chat{
+    margin-top:30px ;
+}
+.main .rocket-chat{
+    border: 2px dashed var(--light-green);
+    border-radius: 12px;
+    padding: 10px 20px;
+    transition: 0.5s all ease;
+}
+.main .rocket-chat img{
+    max-width: 40px;
+}
+.main .rocket-chat span{
+    font-family: var(--font-family);
+    font-weight: var(--font-bold);
+    font-size: var(--f-size-18);
+    color: var(--dark-gray);
+    transition: 0.5s all ease;
+}
+.main .rocket-chat:hover span{
+    color: var(--light-green);
+}
+.main .rocket-chat:hover {
+    border: 2px dashed var(--blue);
+}
+.footer{
+    background: var(--light-gray);
+    height: 70px;
+}
+.footer ul li a{
+    font-family: var(--font-family);
+    font-weight: var(--font-bold);
+    font-size: var(--f-size-18);
+    padding-right:30px;
+    color:var(--blue)
+}
+.footer ul li:last-child a{
+    padding-right: 0px;
+}
+.footer .flag-united-state span ,.footer .flag-india span {
+    color: var(--dark-gray);
+    font-family: var(--font-family);
+    font-weight: var(--font-bold);
+    font-size: var(--f-size-14);
+}
+.footer .flag-united-state img ,.footer .flag-india img{
+    max-width: 35px;
+}
+.footer .flag-txt{
+    margin-left:25px;
+    max-width: 235px;
+}
+
+/* Appmixo-testimonials start */
+.modal-backdrop{
+    height: 0px;
+}
+.appmixo-position #fullpage{
+    position: fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    bottom:0px;
+    display: block;
+}
+.testimonial{
+    font-size: 34px;
+    font-weight: var(--font-heavy);
+}
+.testimonial::after{
+    content: "";
+    border-bottom: 4px solid var(--blue);
+    width: 167px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+.client-close{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+.client .client-play{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    
+}
+.client .client-play i{
+    position: absolute;
+    top: 0%;
+    margin-top: -75px;
+    color: var(--white);
+    background-color: var(--blue);
+    opacity: 0.80;
+    padding: 10px 15px 10px 15px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.client .client-title{
+    box-shadow: 0px 10px 28px #00000014;
+    border-radius: 37px;
+    background-color: var(--white);
+    text-align: center;
+    margin-left:34px;
+    margin-right:34px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px 20px;
+}
+.client .client-title span{
+    color: #4A4A4A;
+    font-weight: var(--font-bold);
+    font-size: 30px;
+}
+.client .client-title  p{
+    color: #A6A8AA;
+    font-weight: var(--font-bold);
+    font-size: 23px;
+}
+.client-btn{
+    margin-top: 40px;
+}
+.client-btn a{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 30px 30px;
+    font-size: var(--f-size-18);
+}
+.client-testimonial{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.client-testimonial .testimonial-left img{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+.client-testimonial .testimonial-circle-right img{
+    box-shadow: 0px 30px 28px #00000014;
+    border-radius: 100px;
+}
+.client-testimonial .testimonial-title{
+    color:var(--purple);
+    font-weight: var(--font-heavy);
+    font-size: var(--f-size-20);
+    margin-top: 20px;
+}
+.client-testimonial .testimonial-reviews{
+    color: var(--yellow);
+    padding-bottom:15px;
+}
+.client-testimonial .testimonial-desc p{ 
+    color: #A6A8AA;
+    height: 225px;
+    overflow-y: scroll;
+}
+.client-testimonial .testimonial-right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#fp-nav ul li .fp-tooltip{
+    color: var(--blue) !important;
+}
+/* Appmixo-testimonials end */
+@media screen and (max-width:374px){
+    #header{
+        padding: 20px 0px 0px;
+        height: 60px;
+    }
+    .header{
+        padding: 10px 0px;
+        height: 50px;
+    }
+    .header .header-mail{
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+    .header .header-mail img {
+        max-width: 20px;
+        margin-right:5px;
+    }
+    .header .header-phone img{
+        max-width: 15px;
+        margin-right: 5px;
+    }
+    .header-mail span , .header-phone span{
+        font-size: var(--f-size-14);
+    }
+    .client .client-title span{
+        font-size: var(--f-size-20);
+    }
+    .client .client-title p{
+        font-size: var(--f-size-16);
+    }
+    .main{
+        height: calc(100vh - 160px );
+    }
+    .main .appmixo img{
+        max-width: 200px;
+    }
+    .main .project-name {
+        max-width: 230px;
+        height: 230px;
+    }
+    .main .project-title span{
+        font-size: var(--f-size-14);
+    }
+    .main .project-desc{
+        padding-top: 0px;
+        padding-bottom:0px;
+        font-size: 12px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .main .project-btn a{
+        font-size:12px;
+        padding:2px 10px;
+    }
+    .testimonial{
+        font-size:22px;
+    }
+    .testimonial::after {
+        width: 120px;
+        margin-top: 7px;
+    }
+    .client-close {
+        top: 10px;
+        right: 10px;
+    }
+    .client-close img{
+        max-width: 16px;
+    }
+    .footer{
+        height: 110px;
+    }
+    .footer ul li a{
+        font-size: var(--f-size-14);
+        padding-right: 10px;
+    }
+    .footer .flag-txt{
+        margin-left: 10px;
+    }
+    .footer .flag-united-state span, .footer .flag-india span{
+        font-size: var(--f-size-12);
+    }
+    .openbtn{
+        position: absolute;
+        bottom:20px;
+        color: var(--blue);
+        z-index: -1;
+        left: 20px;
+        font-size: var(--f-size-20);
+    }
+    .closebtn{
+        position: absolute;
+        bottom:85px;
+        color: var(--blue);
+        z-index: -1;
+        right: 0px;
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:375px) and (max-width:767px){
+    #header{
+        padding: 20px 0px 0px;
+        height: 60px;
+    }
+    .header{
+        padding: 10px 0px;
+        height: 50px;
+    }
+    .header .header-mail{
+        padding-right: 15px;
+        padding-bottom: 5px;
+    }
+    .header .header-mail img {
+        max-width: 25px;
+        margin-right: 10px;
+    }
+    .header .header-phone img{
+        max-width: 16px;
+        margin-right: 10px;
+    }
+    .header-mail span , .header-phone span{
+        font-size: var(--f-size-16);
+    }
+    .main{
+        height: calc(100vh - 160px );
+    }
+    .main .appmixo img{
+        max-width: 200px;
+    }
+    .main .project-name {
+        max-width: 230px;
+        height: 230px;
+    }
+    .main .project-title span{
+        font-size: var(--f-size-14);
+    }
+    .main .project-desc{
+        padding-top: 0px;
+        padding-bottom:0px;
+        font-size: 12px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .testimonial{
+        font-size:22px;
+    }
+    .testimonial::after {
+        width: 120px;
+        margin-top: 7px;
+    }
+    .client-close {
+        top: 10px;
+        right: 10px;
+    }
+    .client-close img{
+        max-width: 16px;
+    }
+    .client .client-title span{
+        font-size: 22px;
+    }
+    .client .client-title p{
+        font-size: var(--f-size-16);
+    }
+    .main .project-btn a{
+        font-size:12px;
+        padding:2px 10px;
+    }
+    .footer{
+        height: 110px;
+    }
+    .footer ul li a{
+        font-size: var(--f-size-14);
+        padding-right: 10px;
+    }
+    .footer .flag-txt{
+        margin-left: 10px;
+    }
+    .footer .flag-united-state span, .footer .flag-india span{
+        font-size: var(--f-size-12);
+    }
+    .openbtn{
+        position: absolute;
+        bottom:20px;
+        color: var(--blue);
+        z-index: -1;
+        left: 20px;
+        font-size: var(--f-size-20);
+    }
+    .closebtn{
+        position: absolute;
+        bottom:85px;
+        color: var(--blue);
+        z-index: -1;
+        right: 0px;
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .main .appmixo img {
+        max-width: 360px;
+    }
+    .main{
+        height: calc(100vh - 150px);
+        background-size: 100% , 34%;
+    }
+    .main .project-name {
+        max-width: 500px;
+        height: 500px;
+    }
+    .main .project-desc{
+        padding-top: 0px;
+        height: 55px;
+        overflow: hidden;
+    }
+    .testimonial{
+        font-size:28px;
+    }
+    .testimonial::after {
+        width: 130px;
+        margin-top: 7px;
+    }
+    .client-close {
+        top: 25px;
+        right: 40px;
+    }
+    .client-close img{
+        max-width: 18px;
+    }
+    .client .client-title span{
+        font-size: 24px;
+    }
+    .client .client-title p{
+        font-size: var(--f-size-18);
+    }
+    #header{
+        padding: 20px 0px 0px;
+        height: 60px;
+    }
+    .footer{
+        height: 100px;
+    }
+    .openbtn{
+        position: absolute;
+        bottom:20px;
+        color: var(--blue);
+        z-index: -1;
+        left: 20px;
+        font-size: var(--f-size-20);
+    }
+    .closebtn{
+        position: absolute;
+        bottom:30px;
+        color: var(--blue);
+        z-index: -1;
+        right: 15px;
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .main{
+        height: calc(100vh - 121px);
+    }
+    .main .appmixo img {
+        max-width: 350px;
+    }
+    .main .project-name {
+        max-width: 500px;
+        height: 500px;
+    }
+    .main .project-desc{
+        padding-top: 0px;
+        height: 56px;
+        overflow: hidden;
+    }
+    .client .client-title span{
+        font-size: 24px;
+    }
+    .client .client-title p{
+        font-size: var(--f-size-18);
+    }
+    .client .client-title{
+        margin-left: 24px;
+        margin-right: -48px;
+        margin-top: -43px;
+        padding: 40px 20px 30px;
+    }
+    .client .client-play i{
+        margin-top: -72px;
+        margin-left: 11px;
+    }
+    .testimonial{
+        font-size: 30px;
+    }
+    .testimonial::after {
+        width: 140px;
+        margin-top: 7px;
+    }
+    .client-close {
+        top: 25px;
+        right: 40px;
+    }
+    .client-close img{
+        max-width: 20px;
+    }
+    .footer ul li a{
+        font-size: var(--f-size-16);
+    }
+    .footer .flag-txt {
+        margin-left: 25px;
+        max-width: 162px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1399px){
+    .main .appmixo img {
+        max-width: 360px;
+    }
+    .main .project-name {
+        max-width: 450px;
+        height: 450px;
+    }
+    .main .project-desc{
+        padding-top: 0px;
+        height: 55px;
+        overflow: hidden;
+    }
+    .client-close {
+        top: 25px;
+        right: 40px;
+    }
+    .client-close img{
+        max-width: 20px;
+    }
+    .testimonial{
+        font-size: 30px;
+    }
+    .testimonial::after {
+        width: 150px;
+        margin-top: 7px;
+    }
+    .client .client-play i{
+        margin-left: -15px;
+    }
+    .client .client-title{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    .client-testimonial {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+    .client-testimonial .testimonial-left img{
+        left:35px;
+    }
+    .client-testimonial .testimonial-right{
+        bottom: 0px;
+        right:40px;
+    }
+    .client .client-title span{
+        font-size: 26px;
+    }
+    .client .client-title p{
+        font-size: var(--f-size-20);
+        padding-right: 20px;
+    }
+    #header{
+        height: 120px;
+        padding: 50px 0px 0px;
+    }
+    #footer{
+        height:170px;
+        padding: 0px;
+    }
+}
+@media  screen and (min-width:1400px) and (max-width:1535px){
+    .main .appmixo img {
+        max-width: 400px;
+    }
+    .main .project-name {
+        max-width:540px;
+        height: 540px;
+    }
+    .main .project-desc{
+        padding-top: 0px;
+        height: 55px;
+        overflow: hidden;
+    }
+    .testimonial{
+        font-size: 30px;
+    }
+    .testimonial::after {
+        width: 150px;
+        margin-top: 7px;
+    }
+    .client-close {
+        top: 25px;
+        right: 40px;
+    }
+    .client-close img{
+        max-width: 20px;
+    }
+    .client .client-title span{
+        font-size: 26px;
+    }
+    .client .client-title p{
+        font-size: var(--f-size-20);
+    }
+    .client-testimonial .testimonial-right{
+        bottom: 0px;
+        right:25px;
+    }
+    #header{
+        height: 120px;
+    }
+    #footer{
+        height:170px;
+        padding: 0px;
+    }
+}
+@media  screen and (min-width:1536px) and (max-width:1700px){
+    .main .project-name {
+        max-width: 390px;
+        height: 390px;
+    }
+    .main .project-desc{
+        padding-top: 0px;
+        height: 55px;
+        overflow: hidden;
+    }
+    .client-close {
+        top: 25px;
+        right: 40px;
+    }
+    .client-close img{
+        max-width: 20px;
+    }
+    #footer{
+        padding:0px 0px 20px;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:991px){
+    .footer{
+        transition: 0.5s all ease;
+        position: fixed;
+        width: 100%;
+        bottom: -110px;
+    }
+}
